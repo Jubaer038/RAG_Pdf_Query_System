@@ -3,7 +3,7 @@ import numpy as np
 import faiss
 from dotenv import load_dotenv
 from fastapi import FastAPI, UploadFile, File, HTTPException
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import gc
@@ -256,4 +256,5 @@ async def query_pdf(file: UploadFile = File(...), query: str = ""):
         error_detail = f"Internal server error: {str(e)}\n{traceback.format_exc()}"
         print(error_detail)
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
+
 
