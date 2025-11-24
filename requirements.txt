@@ -3,8 +3,9 @@ uvicorn
 requests
 python-dotenv
 faiss-cpu
-langchain
+langchain==1.1.0
 uvicorn
-langchain-community==1.0.8
+
+
 
 
