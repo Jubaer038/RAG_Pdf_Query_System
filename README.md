@@ -1,4 +1,4 @@
-# RAG PDF Query API
+# RAG PDF Query System
 
 A FastAPI-based Retrieval-Augmented Generation (RAG) system for querying PDF documents using AI. This application allows users to upload PDF files and ask questions about their content using natural language processing.
 
@@ -255,5 +255,6 @@ Contributions, issues, and feature requests are welcome!
 For issues and questions, please check the terminal logs for detailed error messages.
 
 ---
+
 
 **Last Updated**: November 25, 2025
